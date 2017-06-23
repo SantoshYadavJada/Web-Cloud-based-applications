@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+<div class="header">
+    <div style="float:left">
+        <img src="pass.jpg" style="height: 150px" /></div>
+    <div class="det">
+        <ul>
+            <li>SANTOSH</li>&nbsp &nbsp&nbsp&nbsp
+            <li>santoshjada20@gmail.com</li>&nbsp&nbsp&nbsp&nbsp
+            <li><a href="https://github.com/SantoshYadavJada/">Github</a></li>&nbsp&nbsp&nbsp&nbsp
+        </ul>
+    </div>
+</div>
+<div class="flex-container">
+    <div class="flex-item"><a href="edu.html">education</a></div>
+    <div class="flex-item"><a href="skills.html">skills</a></div>
+    <div class="flex-item"><a href="workexp.html">work experience</a></div>
+    <div class="flex-item"><a href="projects.html">project</a></div>
+</div>
+<div   class="wrapper">
+    <div  id="w" class="levn">
+        <div class="op"><a href="edu.html">education</a></div>
+        <div class="op"><a href="skills.html">skills</a></div>
+        <div class="op"><a href="workexp.html">work experience</a></div>
+        <div class="op"><a href="projects.html">project</a></div>
+    </div>
+    <div class="right">
+        <p2><ol>1. Masters: Masters in Computer Science(2018), UMKC,USA.</ol>
+            <ol>2. Bachelors: B.Tech in EIE(Electronics & Instrumentation), SASTRA University,T.N,India.</ol>
+            <ol>3. School: S.F.S.School, Visakhaptnam, A.P, India.</ol>
+        </p2>
+    </div>
+</div>
+<div id="foot">
+    This is my resume and hereby declare that all the above details are correct.
+</div>
+</body>
+<script>
+
+
+    setInterval(myTimer,0.1);
+
+    function myTimer() {
+        var y = window.innerWidth;
+
+        if (y <780)
+        {
+            document.getElementById("w").style.position ="fixed";
+            document.getElementById("w").style.top ="0px";
+
+        }
+        if (y >780)
+        {
+            document.getElementById("w").style.position ="relative";
+            document.getElementById("w").style.top ="0px";
+
+
+        }
+    }
+
+
+</script>
+</html></html>
