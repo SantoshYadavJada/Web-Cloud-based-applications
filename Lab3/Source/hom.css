@@ -1,0 +1,112 @@
+
+
+
+
+
+#sy1{
+ padding-top:5px;
+    width: 41px;
+    height: 4px;
+    background-color: red;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 8s;
+    margin-left:14px;
+    margin-top:5px;
+     margin-right:13px;
+     animation-iteration-count: 70;
+} 
+ 
+ #sy2 {
+    width: 10px;
+    height: 30px;
+    background-color: red;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 8s;
+    margin-left:30px;
+     animation-iteration-count: 70;
+}
+
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:#ffee58; left:200px; top:0px;}
+    50%  {background-color:#76ff03; left:200px; top:200px;}
+    75%  {background-color:red; left:0px; top:200px;}
+    100% {background-color:#18ffff; left:0px; top:0px;}
+}
+
+#a{
+  
+     background:black;
+  
+   padding: 5px; 
+    width: 100%;
+    height:20%;
+   
+}
+
+ul{
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    max-height:49px;
+    width:100%;
+    background-color:#1565c0;
+     white-space: nowrap;
+    
+}
+
+
+ul li {
+    float:left;
+   
+  display: block;
+   
+}
+
+li a {
+ 
+border-right:1px solid grey;
+    display: block;
+    color: white;
+     font-family: "helvetica";
+    text-align: left;
+    padding:18px 28px;
+     font-size: 22px;
+ font-size: 1.9vw;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #212121;#00acc1;
+}
+
+
+
+
+.n
+{
+
+  border-radius: 70% 70% 70% 4%;
+   position:relative;
+  top: -50px;
+    left:130px;
+     //background-color:red;
+    //color:white;
+	  padding-top: 6px;
+	 padding-bottom: 6px;
+	  //opacity: 0.9;
+  //  filter: alpha(opacity=50);
+	
+   padding-right: 10px; 
+  padding-left: 9px;
+   //font-weight:bold;
+   font-size:1.6em;
+  font-size: 1.9vw;
+ }
+    

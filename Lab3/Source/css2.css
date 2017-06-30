@@ -1,0 +1,147 @@
+.pn{
+margin:0px;
+ }
+
+ a{
+text-decoration:none;}
+.out{
+border:2px solid blue;
+height:auto;
+overflow:auto;
+width:100%;
+ }
+ .bu{
+ float:left; 
+}
+
+
+html, body {
+	margin:0;
+	padding:0;
+	min-height:100%;
+}
+
+body {
+	height:100%;
+	font: 12px/12px "Lucida Sans", "Lucida Grande", sans-serif;
+	color: #000;
+	//background: url('../images/bg.jpg') repeat #fff;
+}
+
+
+ #wrapper{
+ height:100%;
+ 
+  }
+  .left .car {
+	//overflow: hidden;
+	padding:1%;
+	width:96%;
+ height:100%;
+  
+	//border:2px solid rgba(5,0,0,0.6);
+	margin-top:29px;
+    margin-right:2%;
+   margin-left:2%;  
+}
+  
+.car.txt
+{
+padding:2%;
+
+ text-align: left;
+ border: 2px solid blue;
+ font-weight: bold;
+  font-size: 14px;
+ width:100%;
+  height:50%;
+  
+  }
+
+
+input[type=text] {
+    width:83%;
+    box-sizing: border-box;
+    border: 2px solid black;
+    float:left;
+    border-radius: 4px;
+    font-size: 18px;
+    background-color: white;
+    background-image: url('sea.jpg');
+    background-position: -1px -1px;
+    background-repeat: no-repeat;
+    padding:14px 20px 10px 60px;
+    height:50px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+  .txt .fs
+  {
+ padding:4%;
+  float:left;
+  width:50%;
+  height:48%;
+   }
+   .txt .fw
+  {
+  padding:4%;
+  float:right;
+  width:48%;
+  height:68%;
+   }
+   .rp{
+   float:left;
+   padding:1%;
+   top:-30px;
+   position:relative;
+   width:50%;
+   height:20%;
+    }
+ .car .img-con
+{
+float:left;
+padding:2px;
+ border: 3px solid pink;
+  width:30%;
+ height:30%;
+  }
+ 
+ .car .name
+{
+text-decoration:none;
+float:right;
+text-align: left;
+font-family:Helvetica;
+  font-size: 24px;
+//border: 2px solid yellow;
+width:70%;
+height:30%; 
+padding:2%;
+}
+.img-con img
+  {
+   width:100%;
+   margin:0px;
+   margin-top:0px;
+    height:100%;
+	
+   }
+
+
+
+#wrapper .left {
+	width:98.3%;
+    height:auto;
+
+float:left;
+margin-left:2px;
+ // border: 4px solid black;
+  background-color:#fafafa;
+  
+  font-size:2vw;
+}
+
+
+
+
