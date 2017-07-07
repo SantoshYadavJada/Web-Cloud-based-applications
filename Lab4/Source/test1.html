@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="ha.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<script>
+
+
+
+    var app = angular.module('myApp', []);
+    app.controller('customersCtrl', function($scope) {
+        // }
+        $scope.f = new Array();
+
+        var ar=function(){
+            r=Math.floor(Math.random() * 5);
+            //if (r>0) {
+            var iMax = 8;
+            var jMax = 2;
+            $scope.f = new Array();
+
+            for (i=6;i<iMax;i++) {
+                $scope.f[i]=new Array();
+                for (j=0;j<jMax;j++) {
+                    if (r==0)
+                    {
+                        $scope.f[i][j]="a";
+                    }
+                    else
+                    {
+                        $scope.f[i][j]="b";
+                    }
+                }
+            }
+//}
+            //  if (r>5) {
+            var iMax = 2;
+            var jMax = 3;
+            $scope.f = new Array();
+
+            for (i=0;i<iMax;i++) {
+                $scope.f[i]=new Array();
+                for (j=0;j<jMax;j++) {
+                    if ( i==0 && j>0)
+                    {
+                        $scope.f[i][j]="g";
+                    }
+                    else
+                    {
+                        $scope.f[i][j]="b";
+                    }
+                }
+            }
+            // }
+            // if (r>5) {
+            var iMax = 4;
+            var jMax = 1;
+            $scope.f = new Array();
+
+            for (i=0;i<iMax;i++) {
+                $scope.f[i]=new Array();
+                for (j=0;j<jMax;j++) {
+                    $scope.f[i][j]="e";
+                }
+            }
+            // }
+
+
+
+        }
+        ar();
+        var score=function(){
+
+            document.getElementById("n").innerHTML =10;
+
+        }
+        score();
+
+
+    });
+    var app1 = angular.module('myApp1', []);
+    app1.controller('customersCt', function($scope) {
+
+    });
+</script>
+
+<style>
+    #scr{
+        float:left;
+    }
+    .g{
+        background-color:green;
+
+    }
+    .a{
+        background-color:yellow;
+    }
+    .b{
+        background-color:red;
+    }
+    .e{
+        background-color:blue;
+    }
+    body
+    {
+
+        height:auto;
+        padding-left:5%;
+        padding-right:5%;
+    }
+    td{
+        background-color:green;
+        color:black;
+        border:2px solid black;
+        margin:0px;
+        width:30px;
+        height:30px;
+
+    }
+    #over{
+        position:relative;
+        top:-400px;
+        z-index:2;
+    }
+    .leg{
+        border:2px solid black;
+        background-color:red;
+
+
+    }
+    #scr{
+        margin-left:25%;
+        margin-top:5%;
+    }
+    #hd{
+        margin-left:2%;
+
+    }
+    n{
+        float:left;
+    }
+    button{
+        float:right;}
+
+    table {
+        border-collapse: collapse;
+        margin-left:25%;
+        margin-top:5%;
+    }
+
+</style>
+<body>
+<div id="hd" class="w3-panel w3-teal">
+
+    <center> <h2>TETRIS GAME</h2> </center>
+
+</div>
+<div ng-app="myApp" ng-controller="customersCtrl">
+
+    <table>
+        <tr ng-repeat=" i in [0,1, 2, 3, 4,5,6,7]">
+            <td class="{{ f[i][0] }}"></td>
+            <td class="{{ f[i][1] }}"></td>
+            <td class="{{ f[i][2] }}"></td>
+            <td class="{{ f[i][3]  }}"></td>
+            <td class="{{ f[i][4] }}"></td>
+            <td class="{{ f[i][5] }}"></td>
+            <td class="{{ f[i][6] }}"></td>
+        </tr>
+    </table>
+
+</div>
+
+
+
+<div id="scr" class="w3-panel w3-blue">
+
+    Score:<p id="n"></p>
+
+</div>
+</body>
+</html>
