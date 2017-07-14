@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    .side{
+        width:28%;
+        height:100%;
+        float:left;
+        margin:0px;
+        padding-left:1%;
+        padding-top:5%;
+
+
+    }
+    #map{
+        float:left;
+        clear:none;
+    }
+</style>
+<body>
+
+
+
+<div id="map" style="width:70%;height:500px" ng-app="myApp" ng-controller="myCtrl"></div>
+
+
+    <div class="b2 w3-blue" ng-app="myAp" ng-controller="Ctrl">
+    <input type="text" id="lat" name="firstname" placeholder="Enter lat."><br>
+        <input type="text" id="lon" name="firstname" placeholder="Enterlon"><br>
+        &nbsp <button onclick="myMap()">SEARCH</button>
+        <br>
+
+    </div>
+
+
+
+
+
+</div>
+
+<script>
+
+
+        function myMap() {
+            var a = document.getElementById("lat").value;
+            var b = document.getElementById("lon").value;
+
+            var myCenter = new google.maps.LatLng(a, b);
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = {center: myCenter, zoom: 5};
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+            var marker = new google.maps.Marker({position: myCenter});
+            marker.setMap(map);
+
+        }
+
+</script>
+<script>
+    var app = angular.module('myApp', []);
+    app.controller('myCtrl', function($scope) {
+
+    });
+</script>
+<script>
+    var app1 = angular.module('myAp', []);
+    app1.controller('Ctrl', function($scope,$http) {
+
+        $scope.fet=function(){
+
+            var c=document.getElementById("in").value;
+
+            $http.get("http://api.openweathermap.org/data/2.5/weather?q="+c+"&appid=41f13aaa21f7682e87b7cbad827f83c6")
+                .then(function(response) {
+
+                    $scope.temp=response.data.temp;
+                    $scope.humidity=response.data.humidity;
+
+                });
+
+
+        }
+
+    });
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3ci1R0wpaXU8vH2v1TXKP7FuKCouL6b4&callback=myMap"></script>
+
+</body>
+</html>
