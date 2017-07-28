@@ -1,0 +1,385 @@
+{
+  "name": "flare",
+  "children": [
+    {
+      "name": "analytics",
+      "children": [
+        {
+          "name": "cluster",
+          "children": [
+            {
+    "name": "wakeupamerica",
+    "size": 15260
+  },
+  {
+    "name": "tcot",
+    "size": 6018
+  },
+  {
+    "name": "pjnet",
+    "size": 4939
+  },
+  {
+    "name": "nepalquake",
+    "size": 3033
+  },
+  {
+    "name": "whcd",
+    "size": 3020
+  },
+  {
+    "name": "nerdland",
+    "size": 2737
+  },
+  {
+    "name": "newday",
+    "size": 2543
+  },
+  {
+    "name": "ccot",
+    "size": 2197
+  },
+  {
+    "name": "freddiegray",
+    "size": 2113
+  },
+  {
+    "name": "partsunknown",
+    "size": 2015
+  },
+  {
+    "name": "marijuana",
+    "size": 1985
+  },
+  {
+    "name": "highprofits",
+    "size": 1974
+  },
+  {
+    "name": "iran",
+    "size": 1922
+  },
+  {
+    "name": "lnyhbt",
+    "size": 1827
+  },
+  {
+    "name": "nepal",
+    "size": 1768
+  },
+  {
+    "name": "cosproject",
+    "size": 1707
+  },
+  {
+    "name": "mtp",
+    "size": 1567
+  },
+  {
+    "name": "fns",
+    "size": 1567
+  },
+  {
+    "name": "clintoncash",
+    "size": 1450
+  },
+  {
+    "name": "nepalearthquake",
+    "size": 1406
+  },
+  {
+    "name": "irantalks",
+    "size": 1170
+  },
+  {
+    "name": "extremerules",
+    "size": 1156
+  },
+  {
+    "name": "uppers",
+    "size": 1113
+  },
+  {
+    "name": "uniteblue",
+    "size": 1061
+  },
+  {
+    "name": "baltimore",
+    "size": 987
+  },
+  {
+    "name": "ça",
+    "size": 787
+  },
+  {
+    "name": "teaparty",
+    "size": 750
+  },
+  {
+    "name": "hillary",
+    "size": 743
+  },
+  {
+    "name": "2a",
+    "size": 735
+  },
+  {
+    "name": "disclosure",
+    "size": 614
+  },
+  {
+    "name": "obamahatesamerica",
+    "size": 595
+  },
+  {
+    "name": "freeamirnow",
+    "size": 594
+  },
+  {
+    "name": "rednationrising",
+    "size": 574
+  },
+  {
+    "name": "usa",
+    "size": 548
+  },
+  {
+    "name": "foxnews",
+    "size": 547
+  },
+  {
+    "name": "earthquake",
+    "size": 535
+  },
+  {
+    "name": "tlot",
+    "size": 523
+  },
+  {
+    "name": "makedclisten",
+    "size": 517
+  },
+  {
+    "name": "news",
+    "size": 497
+  },
+  {
+    "name": "irandeal",
+    "size": 484
+  },
+  {
+    "name": "hillary2016",
+    "size": 473
+  },
+  {
+    "name": "commoncore",
+    "size": 459
+  },
+  {
+    "name": "uk",
+    "size": 420
+  },
+  {
+    "name": "whyimnotvotingforhillary",
+    "size": 418
+  },
+  {
+    "name": "stopccal",
+    "size": 417
+  },
+  {
+    "name": "stopislam",
+    "size": 416
+  },
+
+  {
+    "name": "obama",
+    "size": 405
+  },
+  {
+    "name": "gop",
+    "size": 405
+  },
+  {
+    "name": "rt",
+    "size": 404
+  },
+  {
+    "name": "articlev",
+    "size": 399
+  },
+  {
+    "name": "baltimoreriots",
+    "size": 380
+  },
+  {
+    "name": "renewus",
+    "size": 375
+  },
+
+  {
+    "name": "tgdn",
+    "size": 368
+  },
+  {
+    "name": "celtics",
+    "size": 361
+  },
+  {
+    "name": "wakeupa",
+    "size": 349
+  },
+  {
+    "name": "syria",
+    "size": 343
+  },
+  {
+    "name": "isis",
+    "size": 343
+  },
+  {
+    "name": "p2",
+    "size": 326
+  },
+  {
+    "name": "stopcommoncore",
+    "size": 324
+  },
+  {
+    "name": "fact",
+    "size": 314
+  },
+  {
+    "name": "conventionofstates",
+    "size": 313
+  },
+  {
+    "name": "nerdprom",
+    "size": 312
+  },
+  {
+    "name": "takebackourcountry",
+    "size": 310
+  },
+  {
+    "name": "gunsense",
+    "size": 309
+  },
+  {
+    "name": "kathmandu",
+    "size": 306
+  },
+  {
+    "name": "bestteamever",
+    "size": 301
+  },
+  {
+    "name": "ext",
+    "size": 292
+  },
+  {
+    "name": "stopislamicterror",
+    "size": 280
+  },
+  {
+    "name": "yesalsb101",
+    "size": 275
+  },
+  {
+    "name": "atamagelsinogretmenolmesin",
+    "size": 273
+  },
+  {
+    "name": "cavaliers",
+    "size": 257
+  },
+
+
+
+  {
+    "name": "reagangrowthnow",
+    "size": 241
+  },
+  {
+    "name": "israel",
+    "size": 240
+  },
+  {
+    "name": "wwe",
+    "size": 239
+  },
+
+  {
+    "name": "standwithisrael",
+    "size": 228
+  },
+
+  {
+    "name": "boycott4truth",
+    "size": 225
+  },
+  {
+    "name": "stophillary2016",
+    "size": 223
+  },
+  {
+    "name": "paris",
+    "size": 223
+  },
+  {
+    "name": "ukpic",
+    "size": 222
+  },
+  {
+    "name": "tpp",
+    "size": 215
+  },
+  {
+    "name": "grandgathering",
+    "size": 214
+  },
+
+  {
+    "name": "democrats",
+    "size": 209
+  },
+  {
+    "name": "blacklivesmatter",
+    "size": 207
+  },
+  {
+    "name": "4palkids",
+    "size": 200
+  },
+  {
+    "name": "mediamustreport",
+    "size": 198
+  },
+  {
+    "name": "morningjoe",
+    "size": 194
+  },
+
+  {
+    "name": "msnbcafterparty",
+    "size": 192
+  },
+  {
+    "name": "iafaithforum",
+    "size": 189
+  },
+
+  {
+    "name": "muslims",
+    "size": 187
+  },
+            {
+              "name": "wakeup",
+              "size": 186
+            }
+  ]
+ }
+]
+}
+]
+}

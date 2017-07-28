@@ -1,0 +1,33 @@
+{
+  "name": "company",
+  "children": [
+    {
+      "name": "employess",
+      "children": [
+        {
+          "name": "salaries",
+          "children": [
+            {
+              "name": "Manager",
+              "size": 30000
+            },
+            {"name": "Assist Manager",
+            "size":  18000 },
+            {
+              "name": "Clerk",
+              "size": 7500
+            },
+            {
+              "name": "Steno",
+              "size": 6000
+            },
+            {
+              "name": "Janitor",
+              "size": 3500
+            }
+          ]
+        }
+		]
+		}
+		]
+		}

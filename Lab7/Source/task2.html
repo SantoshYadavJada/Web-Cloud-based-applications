@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+
+<body>
+<script src="//d3js.org/d3.v4.js"></script>
+<script>
+
+    var dai = 560,
+        format = d3.format(",d"),
+        color = d3.scaleOrdinal(d3.schemeCategory20c);
+
+    var ball = d3.pack()
+        .size([dai, dai])
+         .padding(2);
+
+    var svg = d3.select("body"). append("svg")
+        .attr("width", dai)
+         .attr("height", dai)
+         .attr("class", "ball");
+
+    d3. json("jinx.json",  function(error, data) {
+        if (error) throw error;
+
+        var main = d3.hierarchy(classes(data))
+            .sum(function(d)  { return d.value; })
+              .sort(function(a, b)  { return b.value - a.value; });
+
+        ball(main);
+        var joint = svg.selectAll(".joint")
+            .data(main.children)
+              .enter().append("g")
+               .attr("class", "joint")
+                 .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+
+
+
+        joint.append("circle")
+            .attr("r", function(d) { return d.r; })
+             .style("fill", function(d) {
+                 return color(d.data.packageName);
+            });
+
+        joint.append("text")
+             .attr("dy", ".3em")
+             .style("text-anchor", "middle")
+            .text(function(d) { return d.data.className.substring(0, d.r / 3); });
+    });
+
+
+    function classes(main) {
+        var classes = [];
+
+        function recurse(name, joint) {
+            if (joint.children) joint.children.forEach(function(child)
+            { recurse(joint.name, child); });
+            else classes.push({packageName: name, className: joint.name, value: joint.size});
+        }
+
+        recurse(null, main);
+        return {children: classes};
+    }
+
+    d3.select(self.frameElement).style("height", dai + "px");
+
+</script>
+<style>
+
+    text {
+        font: 10px ;
+    }
+
+</style>
