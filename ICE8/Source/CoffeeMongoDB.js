@@ -1,9 +1,6 @@
-/**
- * Created by Vijaya Yeruva on 5/27/2017.
- */
 
 var MongoClient = require('mongodb').MongoClient;
-var url = 'mongodb://Santo:umkc@ds057386.mlab.com:57386/apldemo';// change it with your db credentials
+var url = 'mongodb://Santo:umkc@ds057386.mlab.com:57386/apldemo';
 
 MongoClient.connect(url, function (err, db) {
     if (err) throw err;
@@ -14,7 +11,7 @@ MongoClient.connect(url, function (err, db) {
         {Id: '4bbcc68fa0a0c9b696c61a0f', Name: 'Coffee Lofts Gym'},
         {Id: '55008ea0498ef17172c53198', Name: 'Kaldis Coffee - Regional Training & Community Coffee Center'}
     ];
-    db.collection("Restaurants").insertMany(myobj, function (err, res) {
+    db.collection("Coffee").insertMany(myobj, function (err, res) {
         if (err) throw err;
         db.close();
     });
@@ -22,7 +19,7 @@ MongoClient.connect(url, function (err, db) {
 
 MongoClient.connect(url, function (err, db) {
     if (err) throw err;
-    db.collection("Restaurants").find({}).toArray(function (err, result) {
+    db.collection("Coffee").find({}).toArray(function (err, result) {
         if (err) throw err;
         db.close();
         var fs = require('fs');
@@ -41,7 +38,7 @@ MongoClient.connect(url, function (err, db) {
             "children": data
         }
         ]
-        fs.writeFile("Restaurants.json", JSON.stringify(newdata), function (err) {
+        fs.writeFile("Coffee.json", JSON.stringify(newdata), function (err) {
                 if (err) throw err;
             }
         );
